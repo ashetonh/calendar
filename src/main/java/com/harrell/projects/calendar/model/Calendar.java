@@ -4,6 +4,12 @@ public class Calendar {
 
 	private User user;
 	private String name;
+	
+	public Calendar(User user, String name) {
+		this.user = user;
+		this.name = name;
+	}
+	
 	public User getUser() {
 		return user;
 	}
