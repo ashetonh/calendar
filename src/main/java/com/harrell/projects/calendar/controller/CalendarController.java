@@ -91,6 +91,7 @@ public class CalendarController {
 		Optional<Event> possibleEvent = this.eventRepository.findById(eventId);
 		if(this.calendarRepository.findById(calendarId) != null && possibleEvent.isPresent()) {
 			event.setId(eventId);
+			event.setCalendar(this.calendarRepository.findById(calendarId).get());
 			this.eventRepository.save(event);
 			return ResponseEntity.noContent().build();
 		}
