@@ -7,6 +7,7 @@ import javax.persistence.CascadeType;
 import javax.persistence.ElementCollection;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 
 import lombok.Data;
@@ -21,7 +22,8 @@ public class Event {
 	
 	private static Long counter = 0l;
 	private @Id Long id;
-	@ManyToOne(cascade = CascadeType.ALL)
+	@ManyToOne(cascade = CascadeType.PERSIST)
+	@JoinColumn(name="CALENDAR_ID")
 	private Calendar calendar;
 	private String title;
 	private LocalDateTime dateTime;

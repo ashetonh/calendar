@@ -98,7 +98,7 @@ public class CalendarController {
 	}
 	
 	@DeleteMapping(value="{calendarId}/delete-meeting/{eventId}")
-	public void deleteMeeting(@PathVariable Long calendarId, @PathVariable long eventId) {
+	public void deleteMeeting(@PathVariable long calendarId, @PathVariable long eventId) {
 		if(this.calendarRepository.findById(calendarId) != null) {
 			this.eventRepository.deleteById(eventId);
 		}
