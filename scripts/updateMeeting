@@ -1,0 +1,2 @@
+#!/bin/bash
+curl -X PUT -H "Content-Type: application/json" -d @../src/main/resources/static/testEvent.json localhost:8080/api/1/update-meeting/$1

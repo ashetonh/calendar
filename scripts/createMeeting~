@@ -1,0 +1,2 @@
+!#/bin/bash
+curl -X POST -H "Content-Type: application/json" -d null localhost:8080/api/1/create-meeting
