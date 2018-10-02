@@ -9,12 +9,14 @@
 ### You can now run multiple different scripts! You can peek at the meetings by running: 
 - ./getMeetings
 ### You can pass one of the unique identifiers (first id in each meeting) and use it as an argument to different scripts like: 
-- ./getMeeting ($meetingId)
-- ./updateMeeting ($meetingId)
-- ./deleteMeeting ($meetingId)
+- ./getMeeting 1
+- ./updateMeeting 2 (assuming there are 2 meetings in the table)
+- ./deleteMeeting 1
 If you would like to create a single event, run:
 - ./createMeeting
 
 
 ### Update:
-I didn't have a lot of time to get into the nitty gritty with a lot of personal issues coming up this past week. This is a really barebones attempt at this rest service. Ideally I would have liked to setup a quick angular app with a login page, separate forms for the different post methods, and a nice table interface to view the meetings. I thought about implementing this with the Google Calendar API but just didn't have enough time. I also would have liked to add pit and jacoco coverage to show line coverage, as well as finish the entire unit testing suite. I would also like to do some acceptance testing with Jest or some API testing framework. 
+I didn't have a lot of time to get into the nitty gritty with a lot of personal issues coming up this past week. This is a really barebones attempt at this rest service. Ideally I would have liked to setup a quick angular app with a login page, separate forms for the different post methods, and a nice table interface to view the meetings. I thought about implementing this with the Google Calendar API but just didn't have enough time. I also would have liked to add pit and jacoco coverage to show line coverage, as well as finish the entire unit testing suite. I would also like to do some acceptance testing with Jest or some API testing framework.
+
+I have never used JPA or H2 before, so that was a learning endeavor at the beginning. I'm sure I am quite off with a truly ok implementation of this web service, but for a first time thing this was a great learning experience.
