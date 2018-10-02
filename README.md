@@ -8,7 +8,7 @@
 
 ### You can now run multiple different scripts! You can peek at the meetings by running: 
 - ./getMeetings
-### Afterwards, you use the identifier given and use it as an argument to different scripts like: 
+### You can pass one of the unique identifiers (first id in each meeting) and use it as an argument to different scripts like: 
 - ./getMeeting ($meetingId)
 - ./updateMeeting ($meetingId)
 - ./deleteMeeting ($meetingId)
